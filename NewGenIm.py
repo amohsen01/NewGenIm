@@ -21,7 +21,7 @@ def convert_image(image_path, image_type):
     # 1. Opening the image:
     im = Image.open(image_path)
     # 2. Converting the image to RGB colour:
-    im = im.convert('RGB')
+    im = im.convert('RGBA')
     # 3. Spliting the image path (to avoid the .jpg or .png being part of the image name):
     image_name = image_path.split('.')[0]
     print(f"This is the image name: {image_name}")
@@ -31,7 +31,7 @@ def convert_image(image_path, image_type):
         im.save(f"{image_name}.webp", 'webp')
     else:
         # Raising an error if we didn't get a jpeg or png file type!
-        print("Dang")
+        print("Error 404")
 
 def browse_button():
     # Allow user to select a directory and store it in global var
