@@ -1,4 +1,4 @@
-# NewGenIm
+# New Generation Image Converter (NewGenIm)
 Automatically Converts JPGs, PNGs, GIFs to WEBP and WEBM formats on html and backs it up
 
 To be able to use NewGenIm Python 3.x needs to be installed
@@ -17,3 +17,7 @@ python3 NewGenIm.py
 
 Select the folder where your html site is on and press convert to see the magic happen. 
 
+
+```
+>Note that if there was something wrong to happen, a backup of the original files are always available and are never touched. 
+```
